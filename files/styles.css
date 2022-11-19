@@ -130,8 +130,10 @@ a:hover {
 }
 
 #features img {
-    width: 100%;
+    width: 65%;
+    min-width: 200px;
     height: 200px;
+    align-self: center;
 }
 
 #features h4 {
@@ -170,7 +172,7 @@ a:hover {
 }
 
 .team-ind img {
-    width: 120px;
+    width: 170px;
     height: 180px;
 } 
 
@@ -198,6 +200,7 @@ a:hover {
     color: #777;
     justify-items: center;
     gap: 25px;
+    height: fit-content;
 }
 
 #footer div {
@@ -229,7 +232,7 @@ a:hover {
     padding: 10px;
     flex-direction: column;
     text-align: center;
-    width: 200px;
+    width: auto;
 }
 
 #footer h6 {
@@ -398,13 +401,11 @@ a:hover {
         grid-template-columns: max-content;
         grid-template-rows: 1fr minmax(auto, 450px) auto;
         justify-content: center;
-        margin: auto;
-        gap: none;
-
+        margin: auto;        
     }
 
     #footer div {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 }
 
@@ -435,6 +436,14 @@ a:hover {
 
     header {
         grid-template-rows: auto 1fr;
+    }
+
+    #social-list {
+        flex-direction: column;
+    }
+
+    #contact {
+        flex-direction: column;
     }
 
     [aria-expanded="true"] ~ ul, [aria-expanded="false"] ~ ul {
