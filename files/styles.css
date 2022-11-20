@@ -404,9 +404,6 @@ a:hover {
         margin: auto;        
     }
 
-    #footer div {
-        /* flex-direction: column; */
-    }
 }
 
 @media (max-width: 760px) {
